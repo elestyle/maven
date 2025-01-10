@@ -1,5 +1,6 @@
 FROM maven:$MAVEN_TAG
 
+ARG MAVEN_TAG # Maven version
 
 # Install git and openssh-client
 RUN apt-get update && apt-get install -y \
