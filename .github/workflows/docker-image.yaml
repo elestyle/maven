@@ -37,7 +37,7 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64
           build-args: |
-            MAVEN_TAG=eclipse-temurin-21
+            MAVEN_TAG=3-eclipse-temurin-21
           push: true
           tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:21
       - name: Build and push Docker image 17
@@ -46,7 +46,7 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64
           build-args: |
-            MAVEN_TAG=eclipse-temurin-17
+            MAVEN_TAG=3-eclipse-temurin-17
           push: true
           tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:17
 

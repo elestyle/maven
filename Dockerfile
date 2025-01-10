@@ -1,6 +1,7 @@
-FROM maven:$MAVEN_TAG
+ARG MAVEN_TAG=3-eclipse-temurin-21
 
-ARG MAVEN_TAG # Maven version
+FROM maven:${MAVEN_TAG}
+
 
 # Install git and openssh-client
 RUN apt-get update && apt-get install -y \
